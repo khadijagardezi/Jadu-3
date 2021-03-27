@@ -7,23 +7,48 @@ body {
     #a4b7dc,
     #be96cd
   );
+  --gradient1: linear-gradient(
+    60deg,
+    #09725f,
+    #25e4de,
+    #70b77e,
+    #e0a890,
+    #f27dc3
+  );
+  --color-error: #cc3333;
+  --color-success: #4bb544;
   margin: 0;
   height: 100vh;
+  font-family: "Dancing Script", cursive;
   font-size: 16px;
 }
 
 @media (max-width: 425px) {
   body {
-    background-color: hsl(152, 76%, 67%);
+    background-image: var(--gradient);
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .maincon {
-    border-style: 1px solid;
-    background-color: hsl(180, 95%, 33%);
+    background-image: var(--gradient1);
+    background-repeat: no-repeat;
+    border: 1px solid;
+    border-color: turquoise;
+    border-radius: 50px;
     text-align: center;
+    width: 360px;
+    max-width: 360px;
+  }
+
+  h1 {
+    font-weight: 600;
+  }
+
+  h2 {
+    font-weight: 400;
   }
 
   .namecon,
@@ -42,12 +67,15 @@ body {
   #email,
   #password,
   #confirm_password {
+    border: transparent;
     border-radius: 8px;
     width: 20em;
     height: 2em;
   }
 
   #submitbtn {
+    border: 1px solid;
+    border-color: yellow;
     border-radius: 8px;
     width: 275px;
     height: 31px;
@@ -56,17 +84,30 @@ body {
 
 @media (min-device-width: 426px) and (max-width: 2560px) {
   body {
-    background-image: var(--gradient);
-    background-size: 300%;
+    background-image: var(--gradient1);
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .maincon {
-    border-style: solid;
-    background-color: hsl(180, 95%, 33%);
+    background-image: var(--gradient);
+    background-repeat: no-repeat;
+    border: 1px solid;
+    border-color: turquoise;
+    border-radius: 50px;
     text-align: center;
+    width: 360px;
+    max-width: 360px;
+  }
+
+  h1 {
+    font-weight: 600;
+  }
+
+  h2 {
+    font-weight: 400;
   }
 
   .namecon,
@@ -85,12 +126,16 @@ body {
   #email,
   #password,
   #confirm_password {
+    border: transparent;
+    border-radius: 8px;
     border-radius: 8px;
     width: 20em;
     height: 2em;
   }
 
   #submitbtn {
+    border: 1px solid;
+    border-color: yellow;
     border-radius: 8px;
     width: 275px;
     height: 31px;

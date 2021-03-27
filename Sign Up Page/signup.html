@@ -13,10 +13,14 @@
     <title>Sign Up Page</title>
   </head>
   <body>
+    <!-- Main div named maincon -->
     <div class="maincon">
       <h1>Welcome</h1>
       <h2>Create Account</h2>
+      <!-- starting of form -->
       <form action="./SignUp.html">
+        <!--action to added as login or landingpage-->
+        <!--First Input field with classname inputdivs and id user_name-->
         <div class="inputdivs">
           <input
             name="user_name"
@@ -29,6 +33,7 @@
           />
         </div>
 
+        <!--Second Input field with classname inputdivs and id email-->
         <div class="inputdivs">
           <input
             required
@@ -40,6 +45,7 @@
           />
         </div>
 
+        <!--third Input field with classname inputdivs and id password-->
         <div class="inputdivs">
           <input
             name="password"
@@ -51,6 +57,7 @@
           />
         </div>
 
+        <!--First Input field with classname inputdivs and id confirm_password-->
         <div class="inputdivs">
           <input
             name="password"
@@ -60,19 +67,24 @@
             type="password"
           />
         </div>
-
+        <!-- Adding checkbox with terms of service anchor tags that is linked to nothing -->
         <p>
           <input type="checkbox" required />
           I agree to all statements in
           <a href="#">Terms of Service</a>
         </p>
 
+        <!-- Adding Sign up button -->
         <div class="signb">
           <input type="submit" id="submitbtn" value="SIGN UP" />
         </div>
       </form>
+
+      <!-- Link back to login page in case account already present -->
       <p>Already have an account? <a href="./signup.html">Login Here</a></p>
     </div>
+
+    <!-- Adding signup.js file link -->
     <script src="signup.js"></script>
   </body>
 </html>

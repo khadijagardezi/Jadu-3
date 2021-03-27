@@ -16,20 +16,80 @@ body {
     #f27dc3
   );
   --color-error: #cc3333;
-  --color-success: #4bb544;
+
   margin: 0;
   height: 100vh;
   font-family: "Dancing Script", cursive;
-  font-size: 16px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.inputdivs,
+.signb {
+  margin: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+#user_name,
+#email,
+#password,
+#confirm_password {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 2px solid #dddddd;
+  outline: none;
+  background: #eeeeeeee;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+#user_name:focus,
+#email:focus,
+#password:focus,
+#confirm_password:focus {
+  background: white;
+  border-color: var(--color-error);
+}
+
+#submitbtn {
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+  /* font-size: 1.1rem; */
+  border: none;
+  outline: none;
+}
+
+#submitbtn:hover {
+  background: var(--color-error);
+}
+
+#submitbtn:active {
+  transform: scale(0.95);
 }
 
 @media (max-width: 425px) {
   body {
     background-image: var(--gradient);
     background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .maincon {
@@ -37,48 +97,10 @@ body {
     background-repeat: no-repeat;
     border: 1px solid;
     border-color: turquoise;
-    border-radius: 50px;
+    border-radius: 35px;
     text-align: center;
     width: 360px;
     max-width: 360px;
-  }
-
-  h1 {
-    font-weight: 600;
-  }
-
-  h2 {
-    font-weight: 400;
-  }
-
-  .namecon,
-  .mailcon,
-  .passcon,
-  .rpasscon,
-  .signb {
-    margin: 1em;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  #user_name,
-  #email,
-  #password,
-  #confirm_password {
-    border: transparent;
-    border-radius: 8px;
-    width: 20em;
-    height: 2em;
-  }
-
-  #submitbtn {
-    border: 1px solid;
-    border-color: yellow;
-    border-radius: 8px;
-    width: 275px;
-    height: 31px;
   }
 }
 
@@ -86,9 +108,6 @@ body {
   body {
     background-image: var(--gradient1);
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .maincon {
@@ -96,48 +115,9 @@ body {
     background-repeat: no-repeat;
     border: 1px solid;
     border-color: turquoise;
-    border-radius: 50px;
+    border-radius: 35px;
     text-align: center;
     width: 360px;
     max-width: 360px;
-  }
-
-  h1 {
-    font-weight: 600;
-  }
-
-  h2 {
-    font-weight: 400;
-  }
-
-  .namecon,
-  .mailcon,
-  .passcon,
-  .rpasscon,
-  .signb {
-    margin: 1em;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  #user_name,
-  #email,
-  #password,
-  #confirm_password {
-    border: transparent;
-    border-radius: 8px;
-    border-radius: 8px;
-    width: 20em;
-    height: 2em;
-  }
-
-  #submitbtn {
-    border: 1px solid;
-    border-color: yellow;
-    border-radius: 8px;
-    width: 275px;
-    height: 31px;
   }
 }

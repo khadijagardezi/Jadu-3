@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./signup.css" />
+    <title>Sign Up Page</title>
+  </head>
+  <body>
+    <div class="maincon">
+      <h1>Welcome</h1>
+      <h2>Create Account</h2>
+      <form action="./SignUp.html">
+        <div class="namecon">
+          <input
+            name="user_name"
+            required
+            id="user_name"
+            placeholder="Name"
+            type="text"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="mailcon">
+          <input
+            required
+            name="email"
+            id="email"
+            placeholder="Your Email"
+            type="email"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="passcon">
+          <input
+            name="password"
+            required
+            id="password"
+            placeholder="Password"
+            type="password"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="rpasscon">
+          <input
+            name="password"
+            required
+            id="confirm_password"
+            placeholder="Confirm Password"
+            type="password"
+          />
+        </div>
+
+        <p>
+          <input type="checkbox" required />
+          I agree to all statements in
+          <a href="#">Terms of Service</a>
+        </p>
+
+        <div class="signb">
+          <input type="submit" id="submitbtn" value="SIGN UP" />
+        </div>
+      </form>
+      <p>Already have an account? <a href="./signup.html">Login Here</a></p>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>

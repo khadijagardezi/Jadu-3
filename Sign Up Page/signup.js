@@ -1,4 +1,4 @@
-//Defining some constantsand getting their values from signup.html file
+//Defining some constants and getting their values from signup.html file
 const nameInput = document.getElementById("user_name");
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
@@ -19,11 +19,15 @@ class User {
   id;
   name;
   email;
+  password;
+  confirmPassword;
 
-  constructor(id, name, email) {
+  constructor(id, name, email, password, confirmPassword) {
     this.id = id;
     this.name = name;
     this.email = email;
+    this.password = password;
+    this.confirmPassword = confirmPassword;
   }
 }
 
@@ -40,7 +44,13 @@ validPasswordInput.addEventListener("mouseout", function () {
 
 //Adding what happens when you click signup button i.e. new data gets added to local storage
 signUpBtn.addEventListener("click", function () {
-  const user = new User(Date.now(), nameInput.value, emailInput.value);
+  const user = new User(
+    Date.now(),
+    nameInput.value,
+    emailInput.value,
+    passwordInput.value,
+    confirmPasswordInput.value
+  );
   users.push(user);
   const usersJson = JSON.stringify(users);
   localStorage.setItem("users", usersJson);

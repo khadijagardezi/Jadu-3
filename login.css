@@ -1,0 +1,112 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+/* Adding body background color - @Asad */
+body {
+  /* We can change to image or other color
+    later - @Asad */
+  background-color: rgb(7, 121, 197);
+
+  /* This is to center the container vertically and Horizontally - @Asad */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  /* Commenting this background color - @Asad */
+  /* background-color: #feffed; */
+  padding: 30px 35px;
+
+  /* Why you set margins in negative? I am commenting this because the below contant was over
+    riding the above heading - @Asad */
+  /* margin: -10px -50px; */
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+
+  /* Adding font size and color - @Asad*/
+  font-size: 40px;
+  color: white;
+}
+
+/* There is no hr in the code. Why you write this here? - @Asad */
+hr {
+  margin: 10px -50px;
+  border: 0;
+  border-top: 1px solid black;
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 600px;
+  height: 500px;
+  /* We dont need these margins because we used flex in body 
+  to center this container - @Asad */
+  /* margin: 30px auto; */
+
+  font-family: sans-serif;
+
+  /* Added this background color to our form and other props- @Asad */
+  background-color: #009fb7;
+  padding: 10px;
+}
+
+/* This  main is not effecting anything at all so I am commenting this whole - @Asad*/
+/* main {
+ width: 300px;
+  padding: 10px 50px 25px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  font-family: raleway;
+  float: left;
+  margin-top: 50px;
+} */
+
+/* adding css to labels - @Asad*/
+label {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.text-inputs {
+  width: 98%;
+  height: 40px;
+  /* I am commenting this padding because it overlaps the container - @Asad */
+  /* padding: 5px; */
+  margin-bottom: 25px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  color: #4f4f4f;
+  /* increasing font size from 16 to 20px and other properties- @Asad */
+  font-size: 20px;
+  border-radius: 5px;
+  display: block;
+}
+
+#submit {
+  font-size: 16px;
+  background: purple;
+  border: 1px solid grey;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 0;
+  outline: none;
+}
+#submit:hover {
+  /* background-color: white; */
+  /* color: purple; */
+  border: 2px white;
+
+  /* adding very little animations - @Asad*/
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+  transition: 500ms;
+}

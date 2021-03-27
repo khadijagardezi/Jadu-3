@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+/* imported font for clock */
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-image: url("/Img/luke-chesser-pJadQetzTkI-unsplash.jpg");
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* absolute, top, left, transform, is an easy way to adjust any content into center of the page */
+}
+
+/* button formatting */
+.btn-main {
+  background-color: teal;
+  color: white;
+  padding: 15px;
+  width: 150px;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 5px 5px 18px #242323;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transform: translateY(50px);
+}
+
+.container a {
+  margin: 20px;
+}
+
+/* animation on hover */
+.btn-main:hover {
+  background-color: tomato;
+  transform: translateY(50px) scale(1.1);
+}
+
+/* clock formatting */
+.clock-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 80px;
+  color: #1ce2e2;
+  font-size: 60px;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 7px;
+}

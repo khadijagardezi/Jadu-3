@@ -1,1 +1,10 @@
-# Jadu-3
+<!--  git checkout -b "branchname" -->
+<!-- git commit -am "update readme.md" -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->

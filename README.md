@@ -13,3 +13,5 @@
 - Email Validation Function Added
 - Clock added to login page
 - Contact Page Added when user successfully login it will redirect to contact page
+- Login page completed
+- contact page completed

@@ -32,7 +32,7 @@ class User {
 }
 
 //Checking if password and confirm password are same an if not generatin an alert
-validPasswordInput.addEventListener("mouseout", function () {
+validPasswordInput.addEventListener("focusout", function () {
   var password = document.getElementById("password").value;
   var confirmPassword = document.getElementById("confirm_password").value;
   if (password != confirmPassword) {

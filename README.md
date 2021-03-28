@@ -1,13 +1,6 @@
 # Jadu-3
 
-## Khadija Code
-
-- Login HTML
-- Login CSS
-- Login JavaScript
-- Page Structure Design
-
-## Asad Code Changes
+## Project Details
 
 - Title name Changed
 - Comments added to html and css code

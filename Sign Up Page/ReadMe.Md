@@ -1,0 +1,4 @@
+- Form Validation of each input fields
+- Digital clock added
+- Background changed
+- Some CSS styling etc

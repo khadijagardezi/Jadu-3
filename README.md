@@ -1,5 +1,12 @@
 # Jadu-3
 
+## Khadija Code
+
+- Login HTML
+- Login CSS
+- Login JavaScript
+- Page Structure Design
+
 ## Asad Code Changes
 
 - Title name Changed
@@ -10,3 +17,4 @@
 
 - Login page JavaScript updated and connected with local storage
 - User can now successfully login if give correct details
+- Email Validation Function Added

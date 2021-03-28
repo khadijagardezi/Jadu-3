@@ -52,6 +52,7 @@ signUpBtn.addEventListener("click", function () {
     confirmPasswordInput.value
   );
   users.push(user);
+
   const usersJson = JSON.stringify(users);
   localStorage.setItem("users", usersJson);
   alert("Sign Up Succesful");

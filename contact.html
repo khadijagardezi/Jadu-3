@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- linking with contact.css -->
+    <link rel="stylesheet" href="contact.css" />
+
+    <title>Contact Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <!-- Clock Time -->
+        <h2 id="clock"></h2>
+
+        <h1>Contact Page</h1>
+        <form action="">
+          <div>
+            <label for="nameinput">Tell us your name</label>
+            <input
+              id="nameinput"
+              type="text"
+              required
+              placeholder="Full name"
+            />
+          </div>
+
+          <div>
+            <label for="emailinput">Enter Email please</label>
+            <input id="emailinput" type="email" required placeholder="Email" />
+          </div>
+
+          <div>
+            <label for="websiteinput">Do you have a website?</label>
+            <input id="websiteinput" type="text" />
+          </div>
+
+          <div>
+            <label for="textareainput">Message</label>
+            <textarea
+              placeholder="Enter your message here"
+              name=""
+              id="textareainput"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <input class="btn" type="button" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <!-- Script for clock -->
+    <script src="login.js"></script>
+  </body>
+</html>

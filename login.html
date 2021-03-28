@@ -11,25 +11,22 @@
     <title>Login</title>
   </head>
   <body>
-    <!-- Removed an extra div named background - @Asad -->
+    <!-- Clock Time -->
+    <h2 id="clock"></h2>
+
     <div class="container">
       <div class="main">
-        <!-- changing this heading from h2 to h1 - @Asad -->
         <h1>Login Form</h1>
-        <!-- I don't know accessing method post with javascript, I used local sessions for sendind
-            data to other pages - @Asad -->
-        <form id="form_id" method="post" name="myform">
+
+        <form id="form_id" name="myform">
           <!-- updating label for attribute -->
 
           <label for="username">Email</label>
-          <!-- Added a class to both email and password inputs name text-inputs - @Asad -->
-          <!-- Added placeholders in input fields - @Asad -->
           <input
             class="text-inputs"
             type="email"
-            name="username"
-            id="username"
-            id="username"
+            name="email"
+            id="email"
             placeholder="Email"
           />
           <label for="password">Password</label>

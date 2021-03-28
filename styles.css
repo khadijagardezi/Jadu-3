@@ -5,7 +5,9 @@ body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  background-image: url("/Img/luke-chesser-pJadQetzTkI-unsplash.jpg");
+  background-image: url("/Img/imgbg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -16,6 +18,13 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  background-color: rgba(78, 75, 92, 0.6);
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 400px;
+  height: 500px;
   /* absolute, top, left, transform, is an easy way to adjust any content into center of the page */
 }
 

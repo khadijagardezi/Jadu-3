@@ -1,10 +1,4 @@
-<!--  git checkout -b "branchname" -->
-<!-- git commit -am "update readme.md" -->
-<!--  -->
-<!--  -->
-<!--  -->
-<!--  -->
-<!--  -->
-<!--  -->
-<!--  -->
-<!--  -->
+- Landing page with multiple buttons to navigate
+- Clock added (Digital)
+- Bg changed to latest one
+- Added shade behind container

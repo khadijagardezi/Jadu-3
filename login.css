@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+/* imported font for clock */
+
 * {
   padding: 0%;
   margin: 0%;
@@ -5,8 +8,10 @@
 
 /* Adding body background color - @Asad */
 body {
-  background-color: rgb(7, 121, 197);
-
+  /* background-color: rgb(7, 121, 197); */
+  background-image: url("./bgimage2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,9 +22,13 @@ body {
 }
 
 #clock {
-  padding: 16px;
-  font-size: 50px;
-  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #1ce2e2;
+  font-size: 60px;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 7px;
 }
 
 h1 {
@@ -28,16 +37,28 @@ h1 {
   text-align: center;
   border-radius: 10px 10px 0 0;
   font-size: 40px;
-  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
 }
 
 .container {
-  width: 600px;
+  width: 480px;
   height: 450px;
 
   font-family: sans-serif;
+  /* 
+  background-color: rgba(105, 3, 117, 0.5); */
+  background-color: rgba(78, 75, 92, 0.5);
+  border-radius: 20px;
+  /* background-image: linear-gradient(
+    60deg,
+    #09725f,
+    #25e4de,
+    #70b77e,
+    #e0a890,
+    #f27dc3
+  ); Adding a gradient variable to be used later */
 
-  background-color: #009fb7;
   padding: 10px;
 }
 
@@ -46,7 +67,7 @@ label {
   display: inline-block;
   margin-top: 20px;
   font-size: 20px;
-  color: white;
+  color: #ffffff;
 }
 
 .text-inputs {
@@ -63,21 +84,28 @@ label {
 }
 
 #submit {
-  font-size: 16px;
-  background: purple;
-  border: 1px solid grey;
+  background-color: teal;
   color: white;
-  font-weight: bold;
+  padding: 10px;
+  width: 150px;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 5px 5px 18px #242323;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   cursor: pointer;
-  width: 100%;
-  border-radius: 5px;
-  padding: 10px 0;
-  outline: none;
+  transform: translateY(50px);
+
+  margin-top: -15px;
+
+  position: relative;
+
+  left: 35%;
 }
 #submit:hover {
-  border: 2px white;
+  background-color: tomato;
 
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   transform: translateY(-5px);
   transition: 500ms;
 }

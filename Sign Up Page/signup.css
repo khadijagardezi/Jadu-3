@@ -1,4 +1,5 @@
 body {
+  /*Adding a gradient variable to be used later*/
   --gradient: linear-gradient(
     60deg,
     #953773,
@@ -6,7 +7,9 @@ body {
     #8984c7,
     #a4b7dc,
     #be96cd
-  ); /*Adding a gradient variable to be used later*/
+  );
+
+  /*Adding a gradient variable to be used later*/
   --gradient1: linear-gradient(
     60deg,
     #09725f,
@@ -14,9 +17,10 @@ body {
     #70b77e,
     #e0a890,
     #f27dc3
-  ); /*Adding a gradient variable to be used later*/
+  );
 
-  --color-error: #cc3333; /*Adding a color file to be used later*/
+  /*Adding a color file to be used later*/
+  --color-error: #cc3333;
 
   /* Setting up the basic html body */
   margin: 0;
@@ -43,6 +47,10 @@ h2 {
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /*Adding styling to input fields using ids */
@@ -97,18 +105,37 @@ a {
     /* Calling the gradient file defined above in body */
     background-image: var(--gradient);
     background-repeat: no-repeat;
+    background-size: 410%;
+    animation: bg-animation 5s infinite;
+  }
+
+  @keyframes bg-animation {
+    0% {
+      background-position: right;
+    }
+    100% {
+      background-position: left;
+    }
   }
 
   .maincon {
     /* Calling the gradient1 file defined above in body */
     background-image: var(--gradient1);
     background-repeat: no-repeat;
-    border: 1px solid;
-    border-color: turquoise;
+    border: 2px solid;
+    border-color: var(--color-error);
     border-radius: 35px;
     text-align: center;
     width: 360px;
     max-width: 360px;
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 1.2s;
+  }
+
+  .maincon:hover,
+  .maincon:focus {
+    background-position: right;
   }
 }
 
@@ -118,17 +145,36 @@ a {
     /* Calling the gradient1 file defined above in body */
     background-image: var(--gradient1);
     background-repeat: no-repeat;
+    background-size: 410%;
+    animation: bg-animation 5s infinite;
+  }
+
+  @keyframes bg-animation {
+    0% {
+      background-position: right;
+    }
+    100% {
+      background-position: left;
+    }
   }
 
   .maincon {
     /* Calling the gradient file defined above  in body */
     background-image: var(--gradient);
     background-repeat: no-repeat;
-    border: 1px solid;
-    border-color: turquoise;
+    border: 2px solid;
+    border-color: var(--color-error);
     border-radius: 35px;
     text-align: center;
     width: 360px;
     max-width: 360px;
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 1.2s;
+  }
+
+  .maincon:hover,
+  .maincon:focus {
+    background-position: right;
   }
 }

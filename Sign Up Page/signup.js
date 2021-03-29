@@ -47,6 +47,7 @@ validPasswordInput.addEventListener("focusout", function () {
   if (password != confirmPassword) {
     alert("Passwords do not Match");
     return false;
+    confirmPassword.autofocus;
   }
   return true;
 });
@@ -80,7 +81,7 @@ signUpBtn.addEventListener("click", function () {
   } else if (document.getElementById("checkbox").checked == false) {
     alert("Cannot submit please accept Terms of Service");
   } else if (validateEmail(emailInput.value) == false) {
-    alert("Email Invalid");
+    alert("Invalid Email");
   } else {
     const user = new User(
       Date.now(),

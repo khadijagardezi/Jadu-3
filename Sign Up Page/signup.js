@@ -4,7 +4,7 @@ const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
 const confirmPasswordInput = document.getElementById("confirm_password");
 const signUpBtn = document.getElementById("submitbtn");
-const validPasswordInput = document.getElementById("confirm_password");
+// const validPasswordInput = document.getElementById("confirm_password");
 
 //Adding data in local storage to userstorage and then turning it to an object and storing it back to users
 const userStorage = localStorage.getItem("users");
@@ -41,16 +41,11 @@ function validateEmail(email) {
 }
 
 // Checking if password and confirm password are same an if not generating an alert
-validPasswordInput.addEventListener("focusout", function () {
-  var password = document.getElementById("password").value;
-  var confirmPassword = document.getElementById("confirm_password").value;
+function validPasswordInput(password, confirmPassword) {
   if (password != confirmPassword) {
-    alert("Passwords do not Match");
     return false;
-    confirmPassword.autofocus;
   }
-  return true;
-});
+}
 
 // Adding what happens when you click signup button i.e. new data gets added to local storage
 // Added form validation it will not accept any empty fields
@@ -73,15 +68,17 @@ signUpBtn.addEventListener("click", function () {
   if (w == "" || w == null) {
     alert("Cannot submit please enter Name");
   } else if (x == "" || x == null) {
-    alert("Cannot submit please enter Email");
+    alert("Cannot submit please enter your Email");
   } else if (y == "" || y == null) {
     alert("Cannot submit please enter Password");
   } else if (z == "" || z == null) {
     alert("Cannot submit please enter Confirm Password");
   } else if (document.getElementById("checkbox").checked == false) {
-    alert("Cannot submit please accept Terms of Service");
-  } else if (validateEmail(emailInput.value) == false) {
+    alert("Cannot submit please accept Terms & Conditions");
+  } else if (validateEmail(x) == false) {
     alert("Invalid Email");
+  } else if (validPasswordInput(y, z) == false) {
+    alert("Passwords do not Match");
   } else {
     const user = new User(
       Date.now(),

@@ -93,7 +93,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 75px;
-  color: #00b1b1;
+  color: teal;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   letter-spacing: 7px;

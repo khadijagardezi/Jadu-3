@@ -1,10 +1,8 @@
 body {
-  padding: 0;
-  margin: 0;
-
   background-image: url("/Img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
   height: 100vh;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -52,11 +50,12 @@ h1 {
 }
 
 /* Adding a focus part which happens when you click on the input field */
-#user_name:focus,
-#email:focus,
-#password:focus,
-#confirm_password:focus {
+#nameinput:focus,
+#emailinput:focus,
+#websiteinput:focus,
+#textareainput:focus {
   background: white;
+  border: 2px solid tomato;
 }
 
 #submitbtn {
@@ -93,7 +92,7 @@ h1 {
   top: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 80px;
+  margin-top: 75px;
   color: #00b1b1;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;

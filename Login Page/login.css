@@ -5,14 +5,14 @@ body {
   background-size: cover;
   margin: 0;
   height: 100vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 18px;
 }
 
 .container {
@@ -70,6 +70,7 @@ p {
 #email:focus,
 #password:focus {
   background: white;
+  border: 2px solid tomato;
 }
 
 /* Adding Styling to Sign Up Input field */

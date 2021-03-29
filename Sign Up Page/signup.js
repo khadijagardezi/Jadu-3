@@ -72,6 +72,11 @@ signUpBtn.addEventListener("click", function () {
   } else if (y == "" || y == null) {
     alert("Cannot submit please enter Password");
   } else if (z == "" || z == null) {
+    if (validPasswordInput(y, z) == false) {
+      alert("Passwords do not Match");
+    } else {
+      alert("Cannot submit please enter Confirm Password");
+    }
     alert("Cannot submit please enter Confirm Password");
   } else if (document.getElementById("checkbox").checked == false) {
     alert("Cannot submit please accept Terms & Conditions");

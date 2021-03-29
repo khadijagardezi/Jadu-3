@@ -93,6 +93,7 @@ p {
   transform: translateY(2px);
   transition: 500ms;
 }
+
 /* Adding an active part which happens when you click on Sign Up */
 #submitbtn:active {
   transform: scale(0.97);

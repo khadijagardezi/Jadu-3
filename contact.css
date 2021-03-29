@@ -5,81 +5,102 @@ body {
   background-image: url("./bgimage2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.container {
-  padding: 10px;
-
-  width: 50%;
-  margin: 0 auto;
+  height: 100vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .info {
-  background-color: rgba(78, 75, 92, 0.5);
+  background-color: rgba(78, 75, 92, 0.6);
   border-radius: 20px;
-
-  width: 480px;
-  /* height: 450px; */
-}
-
-#clock {
   padding: 10px;
-  font-size: 50px;
-  line-height: 1.8px;
-
-  color: #1ce2e2;
-  font-family: "Orbitron", sans-serif;
-  letter-spacing: 7px;
+  text-align: center;
+  width: 400px;
+  border: 1px solid teal;
 }
 
 h1 {
-  text-align: center;
-
-  border-radius: 10px 10px 0 0;
-
-  font-size: 40px;
-}
-div {
-  padding: 10px 0;
-}
-
-label {
-  display: block;
-  margin: 5px 0;
-}
-
-input {
-  width: 90%;
-  padding: 10px;
-  border-radius: 4px;
-
-  /* border: none; */
-}
-
-textarea {
-  width: 90%;
-}
-
-.btn {
-  background-color: teal;
   color: white;
-
-  display: block;
-  width: 150px;
-  margin: auto;
-  padding: 10px;
-  border-radius: 10px;
-  box-sizing: border-box;
 }
-.btn:hover {
-  background-color: tomato;
 
-  transform: translateY(-5px);
+.inputdivs,
+.textarea {
+  margin: 1em;
+}
+
+#nameinput,
+#emailinput,
+#websiteinput,
+#textareainput {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 2px solid teal;
+  outline: none;
+  background: #eeeeeeee;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Adding a focus part which happens when you click on the input field */
+#user_name:focus,
+#email:focus,
+#password:focus,
+#confirm_password:focus {
+  background: white;
+}
+
+#submitbtn {
+  cursor: pointer;
+  border-radius: 4px;
+  width: 90%;
+  background-color: teal;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.015rem;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+/* Adding a hover part which happens when you hover on Sign Up */
+#submitbtn:hover {
+  background-color: tomato;
+  transform: translateY(2px);
   transition: 500ms;
+}
+
+/* Adding an active part which happens when you click on Sign Up */
+#submitbtn:active {
+  transform: scale(0.97);
+}
+
+/* Clock Formatting */
+.clock-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 80px;
+  color: #00b1b1;
+  font-size: 60px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 7px;
+}
+@media only screen and (max-width: 1000px) {
+  .clock-main {
+    font-size: 40px;
+  }
 }

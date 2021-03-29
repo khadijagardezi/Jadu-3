@@ -99,15 +99,28 @@ p {
 
 /* Clock Formatting */
 .clock-main {
-  margin-top: 80px;
+  /* margin-top: 80px; */
   color: teal;
-  font-size: 60px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   letter-spacing: 7px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 375px) {
   .clock-main {
-    font-size: 40px;
+    font-size: 20px;
   }
+}
+@media only screen and (min-width: 645px) {
+  .clock-main {
+    font-size: 45px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .clock-main {
+    font-size: 70px;
+  }
+}
+
+.clock-main:hover {
+  color: tomato;
 }

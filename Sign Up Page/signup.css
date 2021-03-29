@@ -1,5 +1,5 @@
 body {
-  background-image: url("/Img/imgbg.jpeg");
+  background-image: url("/Img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -71,6 +71,7 @@ p {
 #password:focus,
 #confirm_password:focus {
   background: white;
+  border: 2px solid tomato;
 }
 
 /* Adding Styling to Sign Up Input field */
@@ -108,15 +109,29 @@ p {
   top: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 80px;
-  color: #00b1b1;
-  font-size: 60px;
+  margin-top: 75px;
+  color: teal;
+  font-size: 30px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   letter-spacing: 7px;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 375px) {
   .clock-main {
-    font-size: 40px;
+    font-size: 20px;
   }
+}
+@media only screen and (min-width: 645px) {
+  .clock-main {
+    font-size: 45px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .clock-main {
+    font-size: 70px;
+  }
+}
+
+.clock-main:hover {
+  color: tomato;
 }

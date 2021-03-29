@@ -1,6 +1,6 @@
 /* Adding body background color - @Asad */
 body {
-  background-image: url("./bgimage2.jpg");
+  background-image: url("/Img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -99,21 +99,14 @@ p {
 
 /* Clock Formatting */
 .clock-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   margin-top: 80px;
-  color: #00b1b1;
+  color: teal;
   font-size: 60px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   letter-spacing: 7px;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
   .clock-main {
     font-size: 40px;
   }

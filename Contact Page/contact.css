@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
 
-  background-image: url("./bgimage2.jpg");
+  background-image: url("/Img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -23,6 +23,7 @@ body {
   text-align: center;
   width: 400px;
   border: 1px solid teal;
+  padding-bottom: 2em;
 }
 
 h1 {

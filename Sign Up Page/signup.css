@@ -1,54 +1,54 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 body {
   background-image: url("/Img/imgbg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
   height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
+
 .maincon {
   background-color: rgba(78, 75, 92, 0.6);
   border-radius: 20px;
   padding: 10px;
   text-align: center;
   width: 400px;
+  border: 1px solid teal;
 }
 
 h1 {
-  font-weight: 600;
   color: white;
 }
 
 h2 {
-  font-weight: 400;
   color: white;
 }
 
-.inputdivs,
-.signb {
+.inputdivs {
   margin: 1em;
 }
 
 a {
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-}
-p {
-  color: rgb(228, 228, 228);
-  font-family: Arial, Helvetica, sans-serif;
-}
-p a {
-  /* color: rgb(13, 13, 185); */
-  color: #0a036d;
-  font-weight: 600;
+  color: teal;
 }
 
-/*Adding styling to input fields using ids */
+a:hover {
+  text-decoration: underline;
+  color: tomato;
+}
+
+p {
+  color: white;
+}
+
+/*Adding styling to input fields using ids*/
 #user_name,
 #email,
 #password,
@@ -58,9 +58,11 @@ p a {
   padding: 0.75rem;
   border-radius: 4px;
   box-sizing: border-box;
-  border: 2px solid #dddddd;
+  border: 2px solid teal;
   outline: none;
   background: #eeeeeeee;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Adding a focus part which happens when you click on the input field */
@@ -71,27 +73,32 @@ p a {
   background: white;
 }
 
-/* Adding Styling to Sign Up input field */
+/* Adding Styling to Sign Up Input field */
 #submitbtn {
   cursor: pointer;
   border-radius: 4px;
-  width: 50%;
+  width: 100%;
   background-color: teal;
   padding: 1rem 2rem;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.015rem;
+  color: white;
   border: none;
   outline: none;
 }
 
-/* Adding a hover part which happens when you hover on the input field */
+/* Adding a hover part which happens when you hover on Sign Up */
 #submitbtn:hover {
   background-color: tomato;
   transform: translateY(2px);
   transition: 500ms;
 }
+/* Adding an active part which happens when you click on Sign Up */
+#submitbtn:active {
+  transform: scale(0.97);
+}
 
-/* clock formatting */
+/* Clock Formatting */
 .clock-main {
   display: flex;
   flex-direction: column;
@@ -101,9 +108,10 @@ p a {
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 80px;
-  color: #1ce2e2;
+  color: #00b1b1;
   font-size: 60px;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   letter-spacing: 7px;
 }
 @media only screen and (max-width: 1000px) {

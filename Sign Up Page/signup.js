@@ -70,17 +70,17 @@ signUpBtn.addEventListener("click", function () {
 
   // Conditions on empty and null fields
   if (w == "" || w == null) {
-    alert("Cannot submit empty form");
+    alert("Cannot submit please enter Name");
   } else if (x == "" || x == null) {
-    alert("Cannot submit empty form");
+    alert("Cannot submit please enter Email");
   } else if (y == "" || y == null) {
-    alert("Cannot submit empty form");
+    alert("Cannot submit please enter Password");
   } else if (z == "" || z == null) {
-    alert("Cannot submit empty form");
+    alert("Cannot submit please enter Confirm Password");
   } else if (document.getElementById("checkbox").checked == false) {
-    alert("Cannot submit empty form");
+    alert("Cannot submit please accept Terms of Service");
   } else if (validateEmail(emailInput.value) == false) {
-    alert("Email invalid");
+    alert("Email Invalid");
   } else {
     const user = new User(
       Date.now(),

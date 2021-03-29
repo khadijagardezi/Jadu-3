@@ -1,0 +1,84 @@
+body {
+  margin: 0px;
+  height: 100vh;
+  background-image: url("/Img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.container {
+  background-color: rgba(78, 75, 92, 0.6);
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 400px;
+  border: 1px solid teal;
+}
+
+/* Adding Styling to Sign Up Input field */
+.btn-main {
+  cursor: pointer;
+  border-radius: 4px;
+  width: 90%;
+  background-color: teal;
+  margin: 1em;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.015rem;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+/* Adding a hover part which happens when you hover on Sign Up */
+.btn-main:hover {
+  background-color: tomato;
+  transform: translateY(2px);
+  transition: 500ms;
+}
+
+/* Adding an active part which happens when you click on Sign Up */
+.btn-main:active {
+  transform: scale(0.97);
+}
+
+/* Clock Formatting */
+.clock-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 100px;
+  color: teal;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 7px;
+}
+@media only screen and (min-width: 375px) {
+  .clock-main {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 645px) {
+  .clock-main {
+    font-size: 55px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .clock-main {
+    font-size: 80px;
+  }
+}
+
+.clock-main:hover {
+  color: tomato;
+}

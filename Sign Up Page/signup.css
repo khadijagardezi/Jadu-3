@@ -18,7 +18,8 @@ body {
   border-radius: 20px;
   padding: 10px;
   text-align: center;
-  width: 400px;
+  width: 700px;
+  height: 520px;
   border: 1px solid teal;
 }
 
@@ -27,7 +28,8 @@ h1 {
 }
 
 h2 {
-  color: white;
+  color: white; 
+  padding-top: 50px;
 }
 
 .inputdivs {
@@ -36,7 +38,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: teal;
+  color: black;
 }
 
 a:hover {
@@ -110,7 +112,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 75px;
-  color: teal;
+  color: black;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   letter-spacing: 7px;

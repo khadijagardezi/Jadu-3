@@ -1,17 +1,20 @@
 # Jadu-3
 
-## Project Details
+## Hello from Tribe 4.
 
-- Title name Changed
-- Comments added to html and css code
-- Made many changes in HTML and CSS pages for now only
+#### Tribe 4 welcome you to see:
+1. Contact Page
+![Contact Us Page](/Snap/contactus.JPG)
+2. Sign-up 
+![Sign up Page](/Snap/SignUp.JPG)
+3. Log in
+![Log In Page](/Snap/Login.png)
 
-  - You can check my comments for this
+#### Contributors 
+* Khadija Gardezi
+* Husnain Burki
+* Asad Faraz
+* Masood Akhtar
 
-- Login page JavaScript updated and connected with local storage
-- User can now successfully login if give correct details
-- Email Validation Function Added
-- Clock added to login page
-- Contact Page Added when user successfully login it will redirect to contact page
-- Login page completed
-- contact page completed
+
+> We are part of Jadu Full Stack Fellowship 2021

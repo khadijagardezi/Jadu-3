@@ -19,13 +19,14 @@ body {
   border-radius: 20px;
   padding: 10px;
   text-align: center;
-  width: 400px;
+  width: 500px;
   border: 1px solid teal;
   padding-bottom: 2em;
 }
 
 h1 {
   color: white;
+  padding: 35px 0px;
 }
 
 .inputdivs,
@@ -93,7 +94,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 75px;
-  color: teal;
+  color: black;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   letter-spacing: 7px;

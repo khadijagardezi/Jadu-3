@@ -27,11 +27,11 @@ function validate() {
       }
     }
     if (isAuth == false) {
-      alert("email or password incorrect");
+      alert("Email or Password Incorrect");
+      alert("Please Enter Valid Information");
     }
-    //
   } else {
-    alert("Enter valid information");
+    alert("Please Enter Valid Information");
   }
 }
 

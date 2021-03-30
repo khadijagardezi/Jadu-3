@@ -17,6 +17,7 @@ body {
 
 .container {
   width: 400px;
+  margin-top: 150px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   background-color: rgba(78, 75, 92, 0.5);
@@ -101,7 +102,6 @@ p {
 /* Clock Formatting */
 .clock-main {
   margin-top: -200px;
-  padding-bottom: 150px;
   color: teal;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;

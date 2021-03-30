@@ -1,19 +1,18 @@
 body {
+  margin: 0px;
+  height: 100vh;
   background-image: url("/Img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0;
-  height: 100vh;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 18px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  font-size: 18px;
 }
 
-.maincon {
+.container {
   background-color: rgba(78, 75, 92, 0.6);
   border-radius: 20px;
   padding: 10px;
@@ -22,64 +21,13 @@ body {
   border: 1px solid teal;
 }
 
-h1 {
-  color: white;
-}
-
-h2 {
-  color: white;
-}
-
-.inputdivs {
-  margin: 1em;
-}
-
-a {
-  text-decoration: none;
-  color: teal;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: tomato;
-}
-
-p {
-  color: white;
-}
-
-/*Adding styling to input fields using ids*/
-#user_name,
-#email,
-#password,
-#confirm_password {
-  display: block;
-  width: 100%;
-  padding: 0.75rem;
-  border-radius: 4px;
-  box-sizing: border-box;
-  border: 2px solid teal;
-  outline: none;
-  background: #eeeeeeee;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
-/* Adding a focus part which happens when you click on the input field */
-#user_name:focus,
-#email:focus,
-#password:focus,
-#confirm_password:focus {
-  background: white;
-  border: 2px solid tomato;
-}
-
 /* Adding Styling to Sign Up Input field */
-#submitbtn {
+.btn-main {
   cursor: pointer;
   border-radius: 4px;
-  width: 100%;
+  width: 90%;
   background-color: teal;
+  margin: 1em;
   padding: 1rem 2rem;
   font-weight: bold;
   font-size: 1.015rem;
@@ -89,14 +37,14 @@ p {
 }
 
 /* Adding a hover part which happens when you hover on Sign Up */
-#submitbtn:hover {
+.btn-main:hover {
   background-color: tomato;
   transform: translateY(2px);
   transition: 500ms;
 }
 
 /* Adding an active part which happens when you click on Sign Up */
-#submitbtn:active {
+.btn-main:active {
   transform: scale(0.97);
 }
 
@@ -109,7 +57,7 @@ p {
   top: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 75px;
+  margin-top: 100px;
   color: teal;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -122,12 +70,12 @@ p {
 }
 @media only screen and (min-width: 645px) {
   .clock-main {
-    font-size: 45px;
+    font-size: 55px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .clock-main {
-    font-size: 70px;
+    font-size: 80px;
   }
 }
 

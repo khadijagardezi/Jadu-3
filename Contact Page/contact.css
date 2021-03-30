@@ -8,51 +8,35 @@ body {
     "Lucida Sans", Arial, sans-serif;
   font-size: 18px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.maincon {
+.info {
   background-color: rgba(78, 75, 92, 0.6);
   border-radius: 20px;
   padding: 10px;
   text-align: center;
   width: 400px;
   border: 1px solid teal;
+  padding-bottom: 2em;
 }
 
 h1 {
   color: white;
 }
 
-h2 {
-  color: white;
-}
-
-.inputdivs {
+.inputdivs,
+.textarea {
   margin: 1em;
 }
 
-a {
-  text-decoration: none;
-  color: teal;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: tomato;
-}
-
-p {
-  color: white;
-}
-
-/*Adding styling to input fields using ids*/
-#user_name,
-#email,
-#password,
-#confirm_password {
+#nameinput,
+#emailinput,
+#websiteinput,
+#textareainput {
   display: block;
   width: 100%;
   padding: 0.75rem;
@@ -66,19 +50,18 @@ p {
 }
 
 /* Adding a focus part which happens when you click on the input field */
-#user_name:focus,
-#email:focus,
-#password:focus,
-#confirm_password:focus {
+#nameinput:focus,
+#emailinput:focus,
+#websiteinput:focus,
+#textareainput:focus {
   background: white;
   border: 2px solid tomato;
 }
 
-/* Adding Styling to Sign Up Input field */
 #submitbtn {
   cursor: pointer;
   border-radius: 4px;
-  width: 100%;
+  width: 90%;
   background-color: teal;
   padding: 1rem 2rem;
   font-weight: bold;

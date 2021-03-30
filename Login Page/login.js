@@ -22,16 +22,16 @@ function validate() {
       if (users[i].email == email && users[i].password == password) {
         alert("Login Successfull");
         isAuth = true;
-        window.location.href = "contact.html";
+        window.location.href = "/Contact Page/contact.html";
         break;
       }
     }
     if (isAuth == false) {
-      alert("email or password incorrect");
+      alert("Email or Password Incorrect");
+      alert("Please Enter Valid Information");
     }
-    //
   } else {
-    alert("Enter valid information");
+    alert("Please Enter Valid Information");
   }
 }
 

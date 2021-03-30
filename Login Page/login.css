@@ -1,3 +1,4 @@
+/* Adding body background color - @Asad */
 body {
   background-image: url("/Img/background.jpg");
   background-repeat: no-repeat;
@@ -13,12 +14,15 @@ body {
   flex-wrap: wrap;
 }
 
-.maincon {
-  background-color: rgba(78, 75, 92, 0.6);
+.container {
+  width: 400px;
+  margin-top: 150px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgba(78, 75, 92, 0.5);
   border-radius: 20px;
   padding: 10px;
   text-align: center;
-  width: 400px;
   border: 1px solid teal;
 }
 
@@ -30,7 +34,7 @@ h2 {
   color: white;
 }
 
-.inputdivs {
+.main {
   margin: 1em;
 }
 
@@ -48,11 +52,8 @@ p {
   color: white;
 }
 
-/*Adding styling to input fields using ids*/
-#user_name,
 #email,
-#password,
-#confirm_password {
+#password {
   display: block;
   width: 100%;
   padding: 0.75rem;
@@ -66,16 +67,14 @@ p {
 }
 
 /* Adding a focus part which happens when you click on the input field */
-#user_name:focus,
 #email:focus,
-#password:focus,
-#confirm_password:focus {
+#password:focus {
   background: white;
   border: 2px solid tomato;
 }
 
 /* Adding Styling to Sign Up Input field */
-#submitbtn {
+#submit {
   cursor: pointer;
   border-radius: 4px;
   width: 100%;
@@ -89,14 +88,13 @@ p {
 }
 
 /* Adding a hover part which happens when you hover on Sign Up */
-#submitbtn:hover {
+#submit:hover {
   background-color: tomato;
   transform: translateY(2px);
   transition: 500ms;
 }
-
 /* Adding an active part which happens when you click on Sign Up */
-#submitbtn:active {
+#submit:active {
   transform: scale(0.97);
 }
 

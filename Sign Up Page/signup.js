@@ -46,8 +46,10 @@ function validatePassword(password, confirmPassword) {
     return false;
   }
 }
+//submitForm Function which submits form
+let submitForm = () => document.forms["myform"].submit();
 
-validPasswordInput.addEventListener("input", () => {
+validPasswordInput.addEventListener("submit", () => {
   var password = document.getElementById("password").value;
   var confirmPassword = document.getElementById("confirm_password").value;
   if (password != confirmPassword) {
@@ -101,8 +103,10 @@ signUpBtn.addEventListener("click", function () {
     const usersJson = JSON.stringify(users);
     localStorage.setItem("users", usersJson);
     alert("Sign Up Succesful");
+    submitForm();
+    // window.location.href = "/Login Page/login.html";
   }
-  return false;
+  // return false;
 });
 
 // Clock added
